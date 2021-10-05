@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{title}}</title>
+    </head>
+    <style>
+        body { font-size: 18px; }
+        td { vertical-align: top; }
+    </style>
+    <body>
+        <header>
+            Howdy <i>friend</i>, welcome to my <b>website</b>
+            <div style="float: right;">
+                <button onclick="window.location.href='/login'">
+                    Login
+                </button>
+                <button onclick="window.location.href='/signup'">
+                    Sign Up
+                </button>
+                <button onclick="window.location.href='/submit'">
+                    Submit Post
+                </button>
+                <button onclick="window.location.href='/logout'">
+                    Logout
+                </button>
+            </div>
+        </header>
+        <hr>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
